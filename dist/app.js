@@ -3,7 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const app_1 = __importDefault(require("./app"));
-const PORT = process.env.PORT || '5000';
-app_1.default.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
-//# sourceMappingURL=server.js.map
+const express_1 = __importDefault(require("express"));
+const app = express_1.default();
+app.get('/', (_, res) => res.send('Hello World!'));
+exports.default = app;
+//# sourceMappingURL=app.js.map
