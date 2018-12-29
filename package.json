@@ -1,0 +1,14 @@
+{
+  "name": "bldg-mgmt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sbalanovich/bldg-mgmt.git",
+  "author": "Serguei Balanovich <sbalanovich@palantir.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
