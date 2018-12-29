@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "lib": ["dom", "..."] // supertest requires dom for type definitions to work
+  }
+}
