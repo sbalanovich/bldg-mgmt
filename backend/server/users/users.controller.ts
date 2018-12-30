@@ -54,7 +54,7 @@ router.route("/login").post(bodyParser.json(), (request, response) => {
 // This is an example of a protected route. Notice that we call `authorize` in the first place!
 router.route("/profile").get(authorize, async (request, response) => {
   const user = await User.findById(request.user._id);
-  return response.status(200).json(user);
+  return response.status(200).json([user]);
 });
 
 export default router;

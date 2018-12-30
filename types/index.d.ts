@@ -6,4 +6,10 @@ declare module App {
     value: number;
   }
 
+  interface User {
+    email: string;
+    hash: string;
+    salt: string;
+  }
+
 }

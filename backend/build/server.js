@@ -400,7 +400,7 @@ router.route("/login").post(bodyParser.json(), (request, response) => {
 });
 router.route("/profile").get(config_1.authorize, (request, response) => __awaiter(this, void 0, void 0, function* () {
     const user = yield user_model_1.default.findById(request.user._id);
-    return response.status(200).json(user);
+    return response.status(200).json([user]);
 }));
 exports.default = router;
 
